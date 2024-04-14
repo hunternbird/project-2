@@ -9,7 +9,94 @@
 
 /* product page css */
 
+/* styles.css */
 
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set color variables */
+:root {
+    --primary: #F1EBC7;
+    --secondary: #2C2B27;
+    --accent: #029ADD;
+    --green: #BED28B;
+    --orange: #FF8A2B;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary);
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Main styles */
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.artist-section {
+    margin-bottom: 2rem;
+}
+
+.artist-list {
+    list-style: none;
+}
+
+.artist-list li {
+    margin-bottom: 1rem;
+}
+
+.album-list {
+    list-style: none;
+}
+
+.album-list li {
+    margin-left: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* history page css */
 
 
 /* history page css */
