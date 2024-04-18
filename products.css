@@ -95,7 +95,6 @@ nav .nav-content {
     grid-column: 6 / 9;
     grid-row: 1 / -1;
     background-image:url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/top-40-classic-rock-albums-of-all-time-max-huber.jpg");
-    /* background-position:; */
     background-size: 100%;
     background-repeat: repeat;
     border: solid 1px black;
@@ -126,16 +125,6 @@ nav .nav-content {
 
 }
 
-
-
-
-
-.rock-albums-img {
-    width: 100%;/* Make sure the image fills its container horizontally */
-    /* Make sure the image fills its container vertically */
-    object-fit: cover;
-    /* Ensure the image covers the entire container while preserving aspect ratio */
-}
 
 .product-item {
     padding: 10px;

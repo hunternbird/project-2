@@ -14,16 +14,10 @@ fetch(
 
 
 function handleEverything(musicData) {
-    // console.log(musicData["Pop"]["Justin Timberlake"]["albums"]["0"]["name"]);
-    // let artistData = printArtist(musicData);
+
     let artistData = Object.keys(musicData["Rock"]);
     makeArtistList(artistData, musicData);
 
-    // let productData = musicData["Rock"]["Jimi Hendrix"]["albums"][0]["name"];
-    // makeProductTable(productData);
-
-    // let albumData = musicData["Rock"]["Jimi Hendrix"]["albums"];
-    // makeProductTable(albumData);
 }
 
 
@@ -33,12 +27,8 @@ function makeArtistList(artistData, musicData) {
     artistData.sort();
     let artistNames = document.getElementById("artist-names");
 
-    // for (const artist of artistData)
     artistData.forEach(artist => {
         console.log(artist);
-        // let leftColumnList = document.createElement('li');
-        // leftColumnList.innerHTML = artist;
-        // artistNames.appendChild(leftColumnList);
         let leftColumnList = document.createElement('li');
         leftColumnList.classList.add("artist-list-items");
 
@@ -57,21 +47,6 @@ function makeArtistList(artistData, musicData) {
 }
 
 
-
-// function displayArtistAlbums(artist, musicData) {
-//     let albumData = musicData["Rock"][artist]["albums"];
-//     let productNames = document.getElementById("table-content");
-//     productNames.innerHTML = "";
-
-
-//     albumData.forEach(album => {
-//         // console.log(product);
-//         let rightColumnList = document.createElement('li');
-//         rightColumnList.innerHTML = album.name;
-//         productNames.appendChild(rightColumnList);
-//     });
-
-// }
 
 function displayArtistAlbums(artist, musicData) {
     let albumData = musicData["Rock"][artist]["albums"];
@@ -97,9 +72,6 @@ function displayArtistAlbums(artist, musicData) {
     
     albumData.forEach(album => {
         
-
-
-
         // makes a row for each album
         let row = document.createElement("tr");
 
@@ -141,15 +113,13 @@ function displayArtistAlbums(artist, musicData) {
 
 
 function displayTrackRecords(album) {
-    // Clear previous content
+    
     let tableContent = document.getElementById("table-content");
     tableContent.innerHTML = "";
 
-    // Create a table to display track records
     let table = document.createElement("table");
     table.style.border = "1px solid black";
 
-    // Create table header
     let headerRow = document.createElement("tr");
     let trackHeader = document.createElement("th");
     trackHeader.textContent = "Track";
@@ -159,7 +129,6 @@ function displayTrackRecords(album) {
     headerRow.appendChild(durationHeader);
     table.appendChild(headerRow);
 
-    // Loop through each track in the album
     album.tracks.forEach(track => {
         let row = document.createElement("tr");
         let trackCell = document.createElement("td");
