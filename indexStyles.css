@@ -97,18 +97,19 @@ nav .nav-content {
     width: 100%;
     text-align: justify;
     grid-column: 1 / span 3;
+    justify-content: center;
 }
 
 .motto p {
-    font-size: x-large;
+    font-size: large;
     padding: 0 75px;
     text-align: center;
-    transition: font-size 0.3s ease, text-decoration 0.8s ease;
 }
 
 .motto:hover p {
-    font-size: xx-large;
+    font-size: x-large;
     text-decoration: underline;
+    transition: font-size 0.3s ease, text-decoration 0.8s ease;
 }
 
 .footer-content {
