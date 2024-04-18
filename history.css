@@ -11,7 +11,7 @@
     --rust: #AA2704;
 }
 
-body{
+body {
     background-color: var(--primary);
     color: var(--secondary);
 }
@@ -65,11 +65,11 @@ nav .nav-content {
     color: var(--accent);
 }
 
-.story-container{
+.story-container {
     text-align: center;
 }
 
-.team h1{
+.team h1 {
     text-align: center;
 }
 
@@ -126,7 +126,7 @@ nav .nav-content {
     display: block;
 }
 
-.form{
+.form {
     width: 95%;
     align-items: center;
     padding: 20px;
@@ -136,7 +136,7 @@ nav .nav-content {
     color: var(--secondary);
 }
 
-.form-container input[type="submit"]{
+.form-container input[type="submit"] {
     background-color: var(--orange);
     border: 1px solid var(--secondary);
     border-radius: 5px;
