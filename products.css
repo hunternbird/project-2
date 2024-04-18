@@ -1,0 +1,125 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Set color variables */
+:root {
+    --primary: #F1EBC7;
+    --secondary: #2C2B27;
+    --accent: #029ADD;
+    --green: #BED28B;
+    --orange: #FF8A2B;
+    --rust: #AA2704
+}
+
+/* header */
+.header {
+    height: 150px;
+    background-color: var(--rust);
+    z-index: 1;
+    color: var(--primary);
+    text-align: center;
+    position: sticky;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border: none;
+}
+
+nav .nav-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-content .nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--accent);
+}
+
+/* main styles */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* First column auto-sized, second column takes remaining space */
+    grid-template-rows: auto;
+    /* Auto-sized rows */
+    gap: 10px;
+    /* Gap between grid items */
+}
+
+.left-column {
+    grid-row: 1 / -1;
+    /* Span from the first row to the last row */
+    background-color: var(--primary);
+}
+
+.right-column {
+
+    background-color: var(--primary);
+}
+
+.product-item {
+    /* background-color: lightgray; */
+    padding: 10px;
+    grid-column: 2 / 3;
+}
+
+/* Define grid areas for easy placement */
+.grid-container {
+    grid-template-areas:
+        "left right"
+        "left right"
+        "left right"
+        "left right";
+}
+
+/* Assign items to grid areas */
+.left-column {
+    grid-area: left;
+}
+
+.right-column {
+    grid-area: right;
+}
+
+.vinyl-image {
+    width: 7em;
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 1rem;
+}
