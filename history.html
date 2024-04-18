@@ -9,46 +9,105 @@
     <title>History</title>
 </head>
 <body>
-    <section>
-        <div class="story">
-            <div class="story-container">
-                <img src="" alt="">
-                <h1>Our Story</h1>
-                <p>Nestled in the bustling heart of the city, The Music Lovers offers a sanctuary for music enthusiasts and collectors alike.
-                Upon entering, visitors are greeted by the warm crackle of a record spinning on a vintage turntable, setting the tone
-                for an immersive auditory experience. The store's shelves are a treasure trove of rare and iconic albums, spanning
-                decades and genres, from psychedelic rock to smooth jazz, ensuring every visitor finds something that resonates. The
-                Music Lovers isn't just a store; it's a vibrant community hub where music lovers gather to share stories, discover new
-                artists, and revel in the rich, warm sound of analog music. Every weekend, the store transforms into a lively venue for
-                local bands, vinyl release parties, and even vinyl trading sessions, making it a pivotal force in the local music scene.</p>
+    <main>
+        <header class="header">
+            <nav>
+                <h1>Welcome to Our Music Store!</h1>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="story">
+                <div class="story-container">
+                    <h1>Our Story</h1>
+                    <p>Nestled in the bustling heart of the city, The Music Lovers offers a sanctuary for music enthusiasts and collectors alike.
+                    Upon entering, visitors are greeted by the warm crackle of a record spinning on a vintage turntable, setting the tone
+                    for an immersive auditory experience. The store's shelves are a treasure trove of rare and iconic albums, spanning
+                    decades and genres, from psychedelic rock to smooth jazz, ensuring every visitor finds something that resonates. The
+                    Music Lovers isn't just a store; it's a vibrant community hub where music lovers gather to share stories, discover new
+                    artists, and revel in the rich, warm sound of analog music. Every weekend, the store transforms into a lively venue for
+                    local bands, vinyl release parties, and even vinyl trading sessions, making it a pivotal force in the local music scene.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="meet-team">
-            <h1>Meet our team:</h1>
-            <h3>Kat</h3>
-            <h3>Hunter</h3>
-            <h3>Abby</h3>
-        </div>
-    </section>
-    <section>
-        <div class="our-mission">
-            <p>Lorem, ipsum door sit amet consectetur adipisicing elit. Dolorum, itaque inventore. Vero provident perspiciatis, dolores animi dolore quo accusamus facilis expedita, tempora perferendis unde qui itaque quasi quisquam! Porro, voluptate.</p>
-        </div>
-    </section>
-    <section>
-        <div class="form">
-            <h2>Sign up for our email list to receive exclusive discounts!</h2>
-            <div class="inputs">
-                <form>
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname"> 
-                </form>
+        </section>
+        <section>
+            <div class="team">
+                <h1>Meet our team:</h1>
             </div>
-        </div>
-    </section>
+            <div class="meet-team-container">
+                <div class="team-member">
+                    <img src="Katherine_Creer.JPG" alt="Kat">
+                    <h3>Kat</h3>
+                </div>
+                <div class="team-member">
+                    <img src="hunter.jpeg" alt="Hunter">
+                    <h3>Hunter</h3>
+                </div>
+                <div class="team-member">
+                    <img src="abby.jpg" alt="Abby">
+                    <h3>Abby</h3>
+                </div>
+            </div>
+            <div class="our-mission">
+                <h2>We are a group of BYU students who are applying for the Information Systems major!</h2>
+            </div>
+        </section>
+        <section>
+            <div class="form-container">
+                <div class="form">
+                    <h2>Sign up for our email list to receive exclusive discounts!</h2>
+                    <div class="inputs">
+                        <form id="form">
+                            <label for="fname">First Name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" id="lname" name="lname"><br>
+                            <label for="email">Email Address:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <p>What is your favorite genre?</p>
+                            <input type="checkbox" id="option1" name="option1" value="rock">
+                            <label for="option1"> Rock</label><br>
+                            <input type="checkbox" id="option2" name="option2" value="jazz">
+                            <label for="option2"> Jazz</label><br>
+                            <input type="checkbox" id="option3" name="option3" value="classical">
+                            <label for="option3"> Classical</label><br>
+                            <input type="checkbox" id="option4" name="option4" value="other">
+                            <label for="option4"> Other</label>
+                            <p>How did you hear about us?</p>
+                            <input type="radio" id="Google" name="info" value="Google">
+                            <label for="Google">Google</label><br>
+                            <input type="radio" id="friend" name="info" value="Friend">
+                            <label for="friend">Friend</label><br>
+                            <input type="radio" id="other" name="info" value="Other">
+                            <label for="other">Other</label><br><br>
+                            <input type="submit" value="Submit"><br>
+                        </form>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>You have signed up! Stay tuned for offers coming soon!</p>
+                    </div>
+                </div>
+                <div class="picture-container">
+                    <img src="cd.jpg" alt="music event">
+                    <button class="buy-tickets-btn">Buy Tickets Now!</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy;2024 Music Store. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="history.js"></script>
 </body>
 </html>

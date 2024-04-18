@@ -1,7 +1,5 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(234, 234, 234);
-
 }
 
 :root {
@@ -10,7 +8,221 @@
     --accent: #029ADD;
     --green: #BED28B;
     --orange: #FF8A2B;
+    --rust: #AA2704;
+}
 
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/*Navbar*/
+.header {
+    height: 150px;
+    background-color: var(--rust);
+    z-index: 1;
+    color: var(--primary);
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border: none;
+}
+
+nav .nav-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-content .nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--accent);
+}
+
+.story-container{
+    text-align: center;
+}
+
+.team h1{
+    text-align: center;
+}
+
+/*Meet the team*/
+.meet-team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    color: var(--secondary);
+}
+
+.our-mission {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--secondary);
+}
+
+/*HTML Form*/
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    align-items: stretch;
 }
 
 
+.picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.form{
+    width: 95%;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--green);
+    padding: 20px;
+    justify-content: space-between;
+    color: var(--secondary);
+}
+
+.form-container input[type="submit"]{
+    background-color: var(--orange);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Modal Alert when form is submitted*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: var(--primary);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+
+.close {
+    color: var(--rust);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Picture formatting*/
+.picture-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*CSS Animation button*/
+.buy-tickets-btn {
+    position: absolute;
+    bottom: 8%;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+
+}
+
+.picture-container:hover .buy-tickets-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-content {
+    background-color: var(--rust);
+    color: var(--primary);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
