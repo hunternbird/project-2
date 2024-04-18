@@ -1,0 +1,160 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #F1EBC7;
+    --secondary: #2C2B27;
+    --accent: #029ADD;
+    --green: #BED28B;
+    --orange: #FF8A2B;
+    --rust: #AA2704
+}
+
+body{
+    margin-bottom: 0px;
+}
+
+body.show-footer .footer-content{
+    display: block;
+}
+
+.header {
+    height: 160px;
+    background-color: var(--rust);
+    color: var(--primary);
+    text-align: center;
+    position: sticky;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    
+}
+
+nav .nav-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-content .nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--accent);
+}
+
+    
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary);
+    padding-top: 15px;
+}
+
+.main-body div {
+    position: relative;
+    margin-top: 15px;
+}
+
+.main-body img {
+    max-width: 100%;
+    height: auto;
+}
+    
+.motto {
+    margin-top: 20px;
+    color: var(--rust);
+    width: 100%;
+    text-align: justify;
+    grid-column: 1 / span 3;
+    justify-content: center;
+}
+
+.motto p {
+    font-size: large;
+    padding: 0 75px;
+    text-align: center;
+}
+
+.motto:hover p {
+    font-size: x-large;
+    text-decoration: underline;
+    transition: font-size 0.3s ease, text-decoration 0.8s ease;
+}
+
+.footer-content {
+    background-color: var(--rust);
+    color: var(--primary);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.embedded-map {
+    text-align: center;
+    margin-top: 0px;
+    background-color: #F7F6E1;
+    height: 525px;
+}
+
+.embedded-map h1 {
+    color: var(--rust);
+    font-size: 34px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.embedded-map iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
