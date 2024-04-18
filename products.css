@@ -225,7 +225,7 @@ nav .nav-content {
 
 
 footer {
-    background-color: var(--secondary);
+    background-color: var(--rust);
     color: var(--primary);
     text-align: center;
     padding: 1rem;
